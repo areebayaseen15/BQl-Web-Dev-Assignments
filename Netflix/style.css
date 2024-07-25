@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: scroll;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-image: url("hompage.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+padding: 20px 50px;
+height: 70px;
+}
+img{
+   height: 50px;
+   position: relative;
+
+  
+}
+.loginbtn{
+    background-color: rgba(233, 3, 3, 0.959);
+    width: 90px;
+    height:35px;
+    color: white;
+    border: none;
+border-radius: 5px;    
+font-size: 15px;
+font-weight: bold;
+}
+.main{
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0 20px;
+}
+#p1{
+    color: white;
+    font-weight: bold;
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+p{
+    font-size: 1.5rem;
+    color: white;
+    margin: 10px 0;
+}
+
+input{
+    width: 50%;
+    height: 50px;
+    border-radius: 6px;
+    background-color: transparent;
+    font-size: 20px;
+    border: 1px solid white;
+    padding: 0 10px;
+    color: white;
+    
+}
+
+#start{
+    width: 80%;
+    max-width: 200px;
+    height: 55px;
+    border-radius: 6px;
+    color: white;
+    background-color:rgba(233, 3, 3, 0.959 );
+    border: none;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/*  Responsive styles */ 
+@media (max-width: 768px) {
+    #p1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    input, #start {
+        width: 90%;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .loginbtn {
+        margin-top: 10px;
+        width: 100px;
+    }
+
+
+@media (max-width: 480px) {
+    #p1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    input, #start {
+        width: 95%;
+    }
+
+    .loginbtn {
+        width: 80px;
+    }
+}
+}
+
+
+
+
